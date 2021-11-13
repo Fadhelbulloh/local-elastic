@@ -50,9 +50,9 @@ func Index(tipe string) string {
 	var index string
 	switch tipe {
 	case "location":
-		index = "catalog-location-politica"
-	case "organization":
-		index = "catalog-organization-politica"
+		index = "catalog-politica-location"
+	case "event":
+		index = "catalog-politica-event"
 	case "person":
 		index = "catalog-person-politica"
 	}

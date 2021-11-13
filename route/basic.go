@@ -38,5 +38,18 @@ func BasicService(router *gin.Engine) {
 
 		})
 
+		basic.POST("/insert", func(c *gin.Context) {
+			var param model.ParamCatalog
+			if util.ErrHandler(500, c, c.BindJSON(&param)) {
+				return
+			}
+
+			response := service.Insert(param)
+			if util.ErrorHandleResponse(c, response) {
+				return
+			}
+			c.JSON(200, response)
+
+		})
 	}
 }

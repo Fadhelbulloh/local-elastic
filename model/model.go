@@ -16,19 +16,20 @@ type (
 	}
 
 	ParamCatalog struct {
-		ID         string `json:"user_id" example:"40"`
-		Name       string `json:"name" example:"Donald Trump"`
-		Keyword    string `json:"keyword" example:"donald trump"`
-		Type       string `json:"type" example:"person / location / organization"`
-		FBUsername string `json:"fb_username" example:""`
-		FBID       string `json:"fb_id" example:""`
-		TWUsername string `json:"tw_username" example:""`
-		TWID       string `json:"tw_id" example:""`
-		IGUsername string `json:"ig_username" example:""`
-		IGID       string `json:"ig_id" example:""`
-		YTUsername string `json:"yt_username" example:""`
-		YTID       string `json:"yt_id" example:""`
-		Size       int    `json:"size" example:""`
+		ID         []interface{} `json:"_id" example:"40"`
+		UserID     string        `json:"user_id" example:"40"`
+		Name       string        `json:"name" example:"Donald Trump"`
+		Keyword    string        `json:"keyword" example:"donald trump"`
+		Type       string        `json:"type" example:"person / location / organization"`
+		FBUsername string        `json:"fb_username" example:""`
+		FBID       string        `json:"fb_id" example:""`
+		TWUsername string        `json:"tw_username" example:""`
+		TWID       string        `json:"tw_id" example:""`
+		IGUsername string        `json:"ig_username" example:""`
+		IGID       string        `json:"ig_id" example:""`
+		YTUsername string        `json:"yt_username" example:""`
+		YTID       string        `json:"yt_id" example:""`
+		Size       int           `json:"size" example:""`
 	}
 )
 
